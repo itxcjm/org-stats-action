@@ -669,7 +669,7 @@ async function run(octokit, { org, output }) {
       resetAt
     }
     organization(login: $org) {
-      repositories(first: 30, privacy: PUBLIC, after:$after) {
+      repositories(first: 30, privacy: PRIVATE, after:$after) {
         totalCount
         pageInfo {
           endCursor
